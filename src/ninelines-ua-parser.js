@@ -1,6 +1,6 @@
 import UAParser from 'ua-parser-js';
 
-let parser = new UAParser();
+const parser = new UAParser();
 let result = parser.getResult();
 
 function addClass(category, value) {

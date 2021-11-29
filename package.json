@@ -1,6 +1,6 @@
 {
 	"name": "ninelines-ua-parser",
-	"version": "1.1.6",
+	"version": "1.2.0",
 	"description": "UA Parser with HTML classes",
 	"keywords": [
 		"ua-parser",
@@ -26,13 +26,13 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.1.2",
-		"@babel/preset-env": "^7.1.0",
-		"babel-loader": "^8.0.4",
-		"webpack": "^4.24.0",
-		"webpack-cli": "^3.1.2"
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"babel-loader": "^8.2.3",
+		"webpack": "^5.64.4",
+		"webpack-cli": "^4.9.1"
 	},
 	"dependencies": {
-		"ua-parser-js": "^0.7.19"
+		"ua-parser-js": "^1.0.2"
 	}
 }

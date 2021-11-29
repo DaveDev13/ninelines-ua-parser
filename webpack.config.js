@@ -14,6 +14,7 @@ module.exports = {
 		],
 		libraryTarget: 'umd',
 		libraryExport: 'default',
+
 	},
 	module: {
 		rules: [
