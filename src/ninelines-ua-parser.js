@@ -9,12 +9,14 @@ function addClass(category, value) {
 	document.documentElement.classList.add(`is-${category}-${value}`);
 }
 
-if (result.device.model) {
-	addClass('device', result.device.model);
-}
+if (result.device) {
+	if (result.device.model) {
+		addClass('device', result.device.model);
+	}
 
-if (result.device.type) {
-	addClass('device', result.device.type);
+	if (result.device.type) {
+		addClass('device', result.device.type);
+	}
 } else {
 	addClass('device', 'desktop');
 }
@@ -46,7 +48,7 @@ if (result.os.name) {
 	addClass('os', result.os.name);
 
 	if (result.os.version) {
-		addClass('os', `${result.os.name}-${result.os.version}`);
+		addClass('os', result.os.name);
 	}
 }
 
@@ -56,10 +58,6 @@ if (result.engine.name) {
 
 if (result.browser.name) {
 	addClass('browser', result.browser.name);
-
-	if (result.browser.major) {
-		addClass('browser', `${result.browser.name}-${result.browser.major}`);
-	}
 }
 
 export default UAParser;

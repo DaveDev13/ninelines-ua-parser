@@ -11,7 +11,7 @@
 npm install --save ninelines-ua-parser
 ```
 
-### Использование
+## Использование
 
 После установки необходимо подключить библиотеку:
 
@@ -31,10 +31,8 @@ import 'ninelines-ua-parser';
 * `is-device-{model}` - модель устройства;
 * `is-device-{type}` - тип устройства (mobile, tablet, desktop);
 * `is-os-{name}` - название операционной системы (windows, mac-os, linux, android, ios);
-* `is-os-{name}-{version}` - название операционной системы, включая версию;
 * `is-engine-{name}` - движок браузера (edgehtml, gecko, trident, webkit);
 * `is-browser-{name}` - название браузера (chrome, edge, firefox, safari, mobile-safari, opera, ucbrowser, yandex);
-* `is-browser-{name}-{major}` - название браузера, включая версию;
 
 Пример:
 
@@ -44,3 +42,11 @@ import 'ninelines-ua-parser';
     <!-- ... -->
 </html>
 ```
+
+## Участники проекта
+
+<a href="https://github.com/ninelines-team/ninelines-ua-parser/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ninelines-team/ninelines-ua-parser" />
+</a>
+
+Сделано через [contributors-img](https://contrib.rocks).

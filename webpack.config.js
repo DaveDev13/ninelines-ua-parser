@@ -8,13 +8,10 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].js',
-		library: [
-			'ninelines',
-			'UAParser',
-		],
-		libraryTarget: 'umd',
-		libraryExport: 'default',
-
+		library: {
+			name: 'NinelinesUAParser',
+			type: 'umd',
+		},
 	},
 	module: {
 		rules: [
@@ -22,12 +19,7 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: [
-							'@babel/preset-env',
-						],
-					}
+					loader: "babel-loader",
 				},
 			},
 		],
